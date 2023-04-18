@@ -1,0 +1,20 @@
+name: Reverse Engineering!
+description: |
+  This is a simple challenge that is intended to familiarize you with reverse engineering.
+
+  **Connection Instructions**:
+
+  Will be updated after the CTF is incorporated into Swarm.
+  
+  Do the following:
+  
+  Challenge 1. There is a netcat listener running on this container. Connect to it. After connecting to the netcat listener, you should uncover a flag hidden in a .txt file in the /app directory. 
+  Challenge 2  There is a zip file in the /app directory containing the second flag.
+  Challenge 3. There's a flag hidden in a binary program in the /app directory that can be discovered using reverse engineering.
+
+value: 200
+category: Reverse Engineering
+flag: CTF_SDaT{Reverse_Engineering!}, CTF_SDaT{Free_Points1!}, CTF_SDaT{Unzip_Grep_Points!}
+
+# administrative
+container_name: gcc-docker-ctf-1
