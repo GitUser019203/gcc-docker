@@ -6,7 +6,6 @@ RUN apt-get update \
     grep \
     gdb \
     build-essential \
-    net-tools \
     ncat \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
@@ -21,3 +20,7 @@ WORKDIR /app
 
 RUN gcc main.c -o main
 RUN rm main.c
+
+EXPOSE 54321
+
+ENTRYPOINT ["./start_nc.sh"]
