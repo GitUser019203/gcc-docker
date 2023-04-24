@@ -5,4 +5,3 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    command: bash start_nc.sh
